@@ -75,8 +75,8 @@ if(!class_exists('wow')) {
 				'decorate'	=> true,
 				'parent'	=> array(
 					'faction' => array(
-						'alliance'	=> array(0,1,2,3,4,9,11,13,16,17,18,21,23),
-						'horde'		=> array(0,5,6,7,8,10,12,13,14,15,19,20,22),
+						'alliance'	=> array(0,1,2,3,4,9,11,13,16,17,18,21,23,24),
+						'horde'		=> array(0,5,6,7,8,10,12,13,14,15,19,20,22,24),
 					),
 				),
 			),
@@ -115,6 +115,7 @@ if(!class_exists('wow')) {
 						21	=> array(1,2,3,4,11,6,7,8,10), 		// Kul Tiran
 						22	=> array(1,3,4,6,7,8,9,10,11),		// Vulpera
 						23	=> array(1,3,4,6,7,9,10,11),		// Mechagnome
+						24      => array(13), 				// Dracthyr
 					),
 				),
 			),
@@ -139,6 +140,7 @@ if(!class_exists('wow')) {
 						10	=> array(28,29,30),	// Warrior
 						11	=> array(31,32,33),	// Monk
 						12	=> array(34,35),	// Demon Hunter
+						13      => array(36,37),	// Evoker
 					),
 				),
 			),
@@ -162,6 +164,7 @@ if(!class_exists('wow')) {
 						10	=> array(28,29,30),	// Warrior
 						11	=> array(31,32,33),	// Monk
 						12	=> array(34,35),	// Demon Hunter
+						13      => array(36,37),	// Evoker
 					),
 				),
 			),
@@ -170,7 +173,7 @@ if(!class_exists('wow')) {
 		public $default_roles = array(
 			1	=> array(2, 5, 6, 8, 11),					// healer
 			2	=> array(1, 2, 5, 10, 11, 12),				// tank
-			3	=> array(2, 3, 4, 6, 8, 9),					// dd distance
+			3	=> array(2, 3, 4, 6, 8, 9, 13),					// dd distance
 			4	=> array(1, 2, 3, 5, 7, 8, 10, 11, 12)		// dd near
 		);
 
@@ -187,6 +190,7 @@ if(!class_exists('wow')) {
 			10	=> 1,	// Warrior
 			11	=> 4,	// Monk
 			12	=> 2,	// Demon Hunter
+			13      => 3,   // Evoker
 		);
 
 		// source http://wow.gamepedia.com/Class_colors
@@ -203,6 +207,7 @@ if(!class_exists('wow')) {
 			10	=> '#C79C6E',	// Warrior
 			11	=> '#00FF96',	// Monk
 			12	=> '#A330C9',	// Demon Hunter
+			13	=> '#33937F',	// Evoker
 		);
 
 		protected $glang		= array();
