@@ -171,7 +171,7 @@ if(!class_exists('wow')) {
 		);
 
 		public $default_roles = array(
-			1	=> array(2, 5, 6, 8, 11),					// healer
+			1	=> array(2, 5, 6, 8, 11, 13),					// healer
 			2	=> array(1, 2, 5, 10, 11, 12),				// tank
 			3	=> array(2, 3, 4, 6, 8, 9, 13),					// dd distance
 			4	=> array(1, 2, 3, 5, 7, 8, 10, 11, 12)		// dd near
